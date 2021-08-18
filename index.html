@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Interactive Webpage</title>
+
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="index.css" rel="stylesheet" />
+<!--<link rel="home"href="../index.html"/> -->
+
+<!--<link rel="auckland_cinema_details"href="html\auckland_cinema_details.html"/>
+<link rel="auckland_movie_screening_times"href="auckland_movie_screening_times.html"/>
+<link rel="contact_us"href="contact_us.html"/>
+<link rel="movies_coming_soon"href="movies_coming_soon.html"/>
+<link rel="movies_now_showing"href="movies_now_showing.html"/>
+<link rel="privacy_policy"href="privacy_policy.html"/>
+<link rel="wellington_cinema_details"href="wellington_cinema_details.html"/>
+<link rel="wellington_movie_screening_times"href="wellington_movie_screening_times.html"/>-->
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400i|Oswald:500&display=swap" rel="stylesheet" />
+<!--Our two Google hosted fonts can be used like this: font-family: 'Oswald', sans-serif;font-family: 'Noto Serif', serif;-->
+<!-- Remove all # to enable links to be loaded-->
+</head>
+<body>
+  <header>
+    <!-- header content goes in here -->
+    <div class="logo">
+      <center><img src= "img/EyeCandyCinemaLogo2.png">
+    </div></center>
+    
+  </header>
+  <nav class="nav">
+    <!-- navigation menu goes in here -->
+    <!--<a href="index.html"><button class="dropbtn">Home</button></a>-->
+
+    <div class="dropdown">
+         <button class="dropbtn">Cinema Details</button>
+         <div class="dropdown-content">
+         <a href=" # html/wellington_cinema_details.html">Wellington Cinema Details</a>
+         <a href="# html/auckland_cinema_details.html">Auckland Cinema Details</a>
+         </div>
+    </div>
+    <div class="dropdown">
+         <button class="dropbtn">Movies</button>
+         <div class="dropdown-content">
+         <a href="# html/movies_now_showing.html">Movies Now Showing</a>
+         <a href="# html/movies_coming_soon.html">Movies Coming Soon</a>
+         </div>
+    </div>
+    <div class="dropdown">
+         <button class="dropbtn">Screening Times</button>
+         <div class="dropdown-content">
+         <a href="# html/wellington_movie_screening_times.html">Wellington Screening Times</a>
+         <a href="# html/auckland_movie_screening_times.html">Auckland Screening Times</a>
+         </div>
+    </div>
+    <div>
+         <!-- <button class="searchbtn" onclick="location.href='http://google.com';"> Google</button>-->
+    </div>
+  </nav>
+
+
+  <main class="content">
+  <section class="preview-title">
+    <center><h2>Movies Now Showing</h2></center>
+  </section>
+
+
+  <center><article class="article"><a href="# html/movies_now_showing.html">
+    <marquee behavior="scroll" direction="left" scrollamount="8">
+       <p> <img src= "img/The Boss Baby  Family Business (2021).jpg">
+       <img src= "img/The Forever Purge (2021).jpg">
+       <img src= "img/Till Death (2021).jpg">
+       <img src= "img/Werewolves Within (2021).jpg">
+       </p>
+    </marquee></a></center>
+  </article>
+
+  <section class="preview-title">
+    <center><h2>Movies Coming Soon</h2></center>
+  </section>
+
+  <center><article class="article"><a href="# html/movies_coming_soon.html">
+    <marquee behavior="scroll" direction="right" scrollamount="8">
+       <p> <img src= "img/The Suicide Squad (2021).jpg">
+       <img src= "img/Free Guy (2021).jpg">
+       <img src= "img/Candyman (2021).jpg">
+       <img src= "img/Venom Let There Be Carnage (2021).jpg">
+       </p>
+    </marquee></a></center>
+  </article>
+</main>
+
+ 
+  <footer>
+    <!-- footer content goes in here -->
+    <div>
+        <center><a href="# html/contact_us.html"><button class="homebtn">Contact Us</button></a>
+        <a href="# html/privacy_policy.html"><button class="homebtn">Privacy Policy</button></a>
+        <!-- <a href="index.html"><button class="topofpagebtn">Back to the top</button></a> -->
+    </div>
+  </footer>
+</body>
+</html>
