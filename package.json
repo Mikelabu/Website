@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "",
+  "description": "My Website",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -20,5 +20,6 @@
     "express": "^4.17.1",
     "path": "^0.12.7",
     "read-excel-file": "^5.2.8"
-  }
+  },
+  "devDependencies": {}
 }
