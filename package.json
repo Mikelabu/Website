@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Mikelabu/Website/issues"
   },
-  "homepage": "https://github.com/Mikelabu/Website#readme"
+  "homepage": "https://github.com/Mikelabu/Website#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "read-excel-file": "^5.2.8"
+  }
 }
