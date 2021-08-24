@@ -2,7 +2,7 @@
 
 My Website
 
-The Interacrive website called Eyecandy Cinema is a Practical assement for Clientside Developemnt.
+The Interacrive website called Eyecandy Cinema is a Practical assement for Clientside Web Developemnt.
 
-At this stage only the home page is Live. Other pages will follow when I have time between assessments.
+At this stage only the homepage is Live. Other pages will follow when I have time between assessments.
 
