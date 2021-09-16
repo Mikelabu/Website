@@ -185,11 +185,6 @@ marquee {
 }*/
 
 /*MAIN*/
-h2 {
-  font-style: italic;
-  font-size: 2rem;
-  color: rgb(250, 7, 7);
-}
 
 .content {
   flex: 1 0 auto;
@@ -201,6 +196,9 @@ h2 {
 .preview-title {
   padding-top: 1rem;
   padding-bottom: 0;
+  color: red;
+  font-style: italic;
+  font-size: 2rem;
 }
 /*movie images*/
 /* Create four equal columns that floats next to each other 
@@ -230,6 +228,20 @@ h2 {
   color: black;
   width: 100%;
   height: auto;
+  background-image: url("img/candystrip.jpg");
+}
+
+#marquee-container {
+  height: auto;
+  flex-direction: column;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 1rem 3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: teal;
   background-image: url("img/candystrip.jpg");
 }
 .article:hover {
