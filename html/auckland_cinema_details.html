@@ -1,79 +1,70 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet"href="index.css"/>
-  <link rel="home"href="index.html"/>
-  <link rel="auckland_cinema_details"href="auckland_cinema_details.html"/>
-  <link rel="auckland_movie_screening_times"href="auckland_movie_screening_times.html"/>
-  <link rel="contact_us"href="contact_us.html"/>
-  <link rel="movies_coming_soon"href="movies_coming_soon.html"/>
-  <link rel="movies_now_showing"href="movies_now_showing.html"/>
-  <link rel="privacy_policy"href="privacy_policy.html"/>
-  <link rel="wellington_cinema_details"href="wellington_cinema_details.html"/>
-  <link rel="wellington_movie_screening_times"href="wellington_movie_screening_times.html"/>
-
-  <meta charset="utf-8">
-  <title>EyeCandy Cinema</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-
-</head>
+  <head>
+    <title>Eye Candy Cinema</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/index.css" rel="stylesheet" />
+    <link rel="home"href="/index.html"/>
+    <link rel="auckland_cinema_details"href="html\auckland_cinema_details.html"/>
+    <link rel="auckland_movie_screening_times"href="auckland_movie_screening_times.html"/>
+    <link rel="contact_us"href="contact_us.html"/>
+    <link rel="movies_coming_soon"href="movies_coming_soon.html"/>
+    <link rel="movies_now_showing"href="movies_now_showing.html"/>
+    <link rel="privacy_policy"href="privacy_policy.html"/>
+    <link rel="wellington_cinema_details"href="wellington_cinema_details.html"/>
+    <link rel="wellington_movie_screening_times"href="wellington_movie_screening_times.html"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400i|Oswald:500&display=swap" rel="stylesheet" />
+  </head>
 <body>
+  <header>
+      <div class="logo">
+      <center><img src= "/img/EyeCandyCinemaLogo2.png">
+      </div></center>
+  </header>
 
-<header>
+  <nav class="nav">
+    <a href="/index.html"><button class="homebtn">Home</button></a>
 
-<div class="main">
-        <div class="logo">
-      <center><img src= "img/EyeCandyCinemaLogo2.png"></div></center>
-</div>
-    <a href="index.html"><button class="homebtn">Home</button></a>
+    <div class="dropdown">
+        <button class="dropbtn">Cinema Details</button>
+        <div class="dropdown-content">
+        <a href="/html/wellington_cinema_details.html">Wellington Cinema Details</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Movies</button>
+        <div class="dropdown-content">
+        <a href="/html/movies_now_showing.html">Movies Now Showing</a>
+        <a href="/html/movies_coming_soon.html">Movies Coming Soon</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Screening Times</button>
+        <div class="dropdown-content">
+        <a href="/html/wellington_movie_screening_times.html">Wellington Screening Times</a>
+        <a href="/html/auckland_movie_screening_times.html">Auckland Screening Times</a>
+        </div>
+    </div>
+  </nav>
 
-<div class="dropdown">
-     <button class="dropbtn">Cinema Details</button>
-     <div class="dropdown-content">
-     <a href="html/wellington_cinema_details.html">Wellington Cinema Details</a>
+  <main class="content">
+     <center><h2>Auckland Cinema</h2></center>
+      <div class="contact-block">
+        <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3186.7443951617124!2d174.87738721585768!3d-36.99203399524271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4dbfa58690fd%3A0x94f266a8900690f5!2sGenesis%20Building%20Level%202%2F3%20Osterley%20Way%2C%20Manukau%20City%20Centre%2C%20Auckland%202104!5e0!3m2!1sen!2snz!4v1624999682678!5m2!1sen!2snz" width="100%" height="400" style="border:10px;" allowfullscreen="" loading="lazy"></iframe><h3>Auckland Cinema Details</h3><h4>Physical Address</h4>
+        <p>Level 2, 3 Osterley Way, Manukau, 2104, Auckland, New Zealand</p></center>
+      </div>
+  </main>
 
-     </div>
-</div>
-<div class="dropdown">
-     <button class="dropbtn">Movies</button>
-     <div class="dropdown-content">
-     <a href="html/movies_now_showing.html">Movies Now Showing</a>
-     <a href="html/movies_coming_soon.html">Movies Coming Soon</a>
-     </div>
-</div>
-<div class="dropdown">
-     <button class="dropbtn">Screening Times</button>
-     <div class="dropdown-content">
-     <a href="html/wellington_movie_screening_times.html">Wellington Screening Times</a>
-     <a href="html/auckland_cinema_details.html">Auckland Screening Times</a>
-     </div>
-</div>
-<div>
-      <button class="searchbtn" onclick="location.href='http://google.com';"> Google</button>
-</div>
-
-
-
-<br>
- <div class="contact-block">
-  <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3186.7443951617124!2d174.87738721585768!3d-36.99203399524271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4dbfa58690fd%3A0x94f266a8900690f5!2sGenesis%20Building%20Level%202%2F3%20Osterley%20Way%2C%20Manukau%20City%20Centre%2C%20Auckland%202104!5e0!3m2!1sen!2snz!4v1624999682678!5m2!1sen!2snz" width="100%" height="400" style="border:10px;" allowfullscreen="" loading="lazy"></iframe><h3>Auckland Cinema Details</h3><h4>Physical Address</h4>
-  <p>Level 2, 3 Osterley Way, Manukau, 2104, Auckland, New Zealand</p></center>
-</div>
-
-
- </div>
-
-
-
-</header>
-<footer class="footer">
-  <div>
-   <center><a href="html/contact_us.html"><button class="homebtn">Contact Us</button></a>
-   <a href="html/privacy_policy.html"><button class="homebtn">Privacy Policy</button></a>
-   <a href="html/auckland_cinema_details.html"><button class="topofpagebtn">Back to the top</button></a>
-  </div>
-</footer>
+  <footer class="footer">
+    <div>
+      <center><a href="/html/contact_us.html"><button class="homebtn">Contact Us</button></a>
+      <a href="/html/privacy_policy.html"><button class="homebtn">Privacy Policy</button></a>
+      <a href="/html/auckland_cinema_details.html"><button class="topofpagebtn">Back to the top</button></a>
+    </div>
+  </footer>
 </body>
+</html>

@@ -1,6 +1,10 @@
+
+// ]
+
+
 (function(window, document, undefined) {
-    let spaceinterval = 2;
-    let timeinterval = 20; // `speed`
+    let spaceinterval = 1;
+    let timeinterval = 10; // `speed`
    let max;
   let firstrun = true;
     // Interval function:
@@ -11,9 +15,9 @@
        max = elem.scrollWidth;
        // Clone the children of the container until the
        // scrollWidth is at least twice as large as max.
-       while (elem.scrollWidth < max * 50) {
+       while (elem.scrollWidth < max * 2) {
        let length = elem.children.length;
-        for (var i = 0; i <22; ++i) {
+        for (var i = 0; i < length; ++i) {
          elem.appendChild(elem.children[i].cloneNode(true));
         }
         break;
@@ -29,3 +33,4 @@
     };
     window.setInterval(gallery, timeinterval);
    })(window, document);
+
