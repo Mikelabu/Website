@@ -22,6 +22,7 @@ body {
   height: 9rem;
   position: relative;
   top: 3%;
+  padding-bottom: 2rem;
   left: auto;
 }
 
@@ -40,7 +41,7 @@ body {
   align-items: center;
   /*Styles needed for the button only*/
   border: 2rem;
-  background: white;
+  background: none;
   transition: 0.5s;
 }
 
@@ -49,28 +50,29 @@ body {
   position: relative;
   min-width: 4rem;
   border-radius: 1rem;
-  background-color: rgb(68, 215, 241);
+  background-color: rgb(174, 220, 245);
   color: black;
   border-radius: 1rem;
 }
 
 .dropdown-content a {
   color: black;
-  padding: 0;
+  min-width: 4rem;
+  padding: 1rem 1rem;
   transition: 0.2s;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: rgb(68, 215, 241);
-  color: rgb(250, 7, 7);
+  background-color: rgb(244, 213, 236);
+  color: rgb(225, 10, 25);
   border-radius: 1rem;
   transition: 0.1s;
 }
 
 .dropdown:hover .dropdown-content {
-  margin: 1rem 3rem;
+  margin: 1rem 1rem;
   padding: 0rem 0.25rem;
   display: block;
   flex-wrap: nowrap;
@@ -118,6 +120,33 @@ marquee {
   border: 5rem;
   background: none;
 }
+/* Time and date button on screening times page */
+
+#timebtn {
+  color: black;
+  font-size: 0.9rem;
+  background-color: rgb(56, 235, 160);
+  opacity: 0.9;
+  position: fixed;
+  padding: 0.25rem 0.25rem;
+  margin: 1rem 1rem;
+  border: none;
+  box-sizing: border-box;
+  border-style: inset;
+  border-width: thin;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  width: 7rem;
+}
+#timebtn:hover {
+  background-color: rgb(80, 35, 244);
+  color: rgb(187, 240, 241);
+}
+#dateTime {
+  color: #2107c7;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+}
 
 /* home button. This will cover the Contact us and Privacy bi=uttons in footer*/
 .homebtn {
@@ -125,8 +154,8 @@ marquee {
   margin: 0 0.625rem;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-size: 1.5rem;
-  color: #4a4a4a;
+  font-size: 2.25rem;
+  color: black;
   /*We want these buttons to have a decent touch area so they are easy to click/tap*/
   display: inline-flex;
   min-height: 2.8125rem;
@@ -140,45 +169,25 @@ marquee {
   color: rgb(250, 7, 7);
   border-radius: 1rem;
 }
-/*Search Button*/
-.searchbtn {
-  color: black;
-  font-size: 13px;
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  padding: 10px 10px;
-  margin: 10px 10px;
-  border: Grey;
-  box-sizing: border-box;
-  border-style: inset;
-  border-width: thin;
-  border-radius: 40px;
-  cursor: pointer;
-  width: 80px;
-  background-color: white;
-}
-.searchbtn:hover {
-  background-color: lightblue;
-  color: black;
-}
+
 /* Top of page Button  */
 .topofpagebtn {
   color: black;
-  font-size: 13px;
-  background-color: lightgrey;
+  font-size: 0.9rem;
+  background-color: rgb(206, 105, 105);
+  opacity: 0.6;
   position: fixed;
-  bottom: 8px;
-  right: 16px;
-  padding: 10px 10px;
-  margin: 10px 10px;
+  bottom: 0.5rem;
+  right: 1rem;
+  padding: 0.25rem 0.25rem;
+  margin: 1rem 1rem;
   border: none;
   box-sizing: border-box;
   border-style: inset;
   border-width: thin;
-  border-radius: 50px;
+  border-radius: 1.5rem;
   cursor: pointer;
-  width: 120px;
+  width: 7rem;
 }
 .topofpagebtn:hover {
   background-color: lightblue;
@@ -189,9 +198,9 @@ marquee {
 
 .content {
   flex: 1 0 auto;
-  padding-top: 0rem;
+  padding-top: 1.25rem;
   padding-bottom: 5rem;
-  transform: (-50% -50%);
+  /* transform: (-50% -50%); */
 }
 
 .preview-title {
@@ -284,7 +293,6 @@ marquee {
 
 footer {
   height: 6rem;
-  background-color: clear;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
@@ -295,6 +303,28 @@ footer a {
   display: inline-block;
   font-size: 2rem;
 }
+/* Footer selection */
+.footbtn {
+  padding: 0 5rem;
+  margin: 0 0.625rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: black;
+  /*We want these buttons to have a decent touch area so they are easy to click/tap*/
+  display: inline-flex;
+  min-height: 2.8125rem;
+  align-items: center;
+  /*Styles needed for the button only*/
+  border: 5rem;
+  background: none;
+}
+.footbtn:hover {
+  /*background-color: rgb(68, 215, 241);*/
+  color: rgb(250, 7, 7);
+  border-radius: 1rem;
+}
+
 /*contact us page*/
 /* Style inputs */
 input[type="text"],
@@ -420,7 +450,7 @@ input[type="submit"]:hover {
     flex: 1 0 auto;
     padding-top: 1rem;
     padding-bottom: 2rem;
-    transform: (-50% -50%);
+    /* transform: (-50% -50%); */
   }
 
   .preview-title {
@@ -430,7 +460,7 @@ input[type="submit"]:hover {
 
   .nav {
     height: 4rem;
-    flex-wrap: grid;
+    /* flex-wrap: grid; */
     align-items: flex-start;
     justify-content: stretch;
     padding-top: 3rem;
@@ -477,7 +507,7 @@ input[type="submit"]:hover {
   }
   footer {
     height: 4rem;
-    background-color: clear;
+
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
@@ -630,7 +660,7 @@ input[type="submit"]:hover {
   }
   footer {
     height: 3rem;
-    background-color: clear;
+
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
