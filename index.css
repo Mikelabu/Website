@@ -866,6 +866,29 @@ input[type="submit"]:hover {
     background-color: teal;
     background-image: url("img/candystrip.jpg");
   }
+
+  #timebtn {
+    color: black;
+    font-size: 0.9rem;
+    background-color: rgb(56, 235, 160);
+    opacity: 0.9;
+    position: fixed;
+    padding: 0.25rem 0.25rem;
+    margin: 0.25rem 0.25rem;
+    border: none;
+    box-sizing: border-box;
+    border-style: inset;
+    border-width: thin;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    width: 4rem;
+    opacity: 0.6;
+  }
+  #timebtn:focus-within {
+    background-color: rgb(80, 35, 244);
+    color: rgb(187, 240, 241);
+  }
+
   /*movie images*/
   /* Create four equal columns that floats next to each other  */
   .galary-view {
