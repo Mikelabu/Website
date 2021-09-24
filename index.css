@@ -467,33 +467,91 @@ input[type="submit"]:hover {
   .nav {
     display: grid;
     height: 5rem;
-    position: sticky;
+    position: inherit;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
     padding-bottom: 0.5rem;
-    padding-left: 1rem;
     position: relative;
-    margin: 0 0 0 0;
+    margin-top: 0.5rem;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
   }
+  .dropdown {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 1rem 0.5rem;
+    font-family: "Oswald", sans-serif;
+    text-transform: none;
+    font-size: 1rem;
+    color: #0b0ff0;
+    /*We want these buttons to have a decent touch area so they are easy to click/tap*/
+    display: inline-block;
+    min-height: 0.2rem;
+    align-items: center;
+    /*Styles needed for the button only*/
+    border: 0.5rem;
+    background: none;
+  }
+  .dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 4rem;
+    border-radius: 1rem;
+    background-color: rgb(68, 215, 241);
+    color: black;
+    border-radius: 1rem;
+  }
 
+  .dropdown-content a {
+    color: black;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgb(68, 215, 241);
+    color: rgb(250, 7, 7);
+    border-radius: 1rem;
+  }
+
+  .dropdown:hover .dropdown-content {
+    margin: 1rem 3rem;
+    padding: 0 0.25rem;
+    display: block;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: rgb(236, 20, 66);
+    color: black;
+    transition: 50s;
+  }
   .dropbtn {
-    padding: 0 2rem;
-    margin: 0 0.625rem;
+    padding-top: 0.25rem;
+    padding-left: 0.22rem;
+    padding-right: 0.25rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    margin-top: 0.2rem;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
-    font-size: 2.15rem;
+    font-size: 1rem;
     color: black;
     /*We want these buttons to have a decent touch area so they are easy to click/tap*/
     display: inline-flex;
-    min-height: 2.8125rem;
+    min-height: 2rem;
     align-items: center;
     /*Styles needed for the button only*/
     border: 5rem;
     background: none;
+  }
+  .dropbtn:hover {
+    background-color: magenta;
   }
   /* home button*/
   .homebtn {
