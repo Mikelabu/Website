@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,700&display=swap");
+
 body {
   height: 100%;
   display: flex;
@@ -369,20 +371,20 @@ input[type="submit"]:hover {
 /* Style the container/contact section */
 .container {
   border-radius: 4rem;
-  background-image: url("react.js");
-  background-color: #dfefff;
-  padding-left: 10rem;
+  background-color: rgba(223, 242, 244, 0.4);
+  padding-left: 0.1rem;
+  padding-right: 2rem;
   padding-top: 2rem;
   padding-bottom: 3rem;
-  margin: 3rem 6rem;
+  margin: 1rem 1rem;
 }
 
 /* Create two columns that float next to eachother */
 .column {
   float: left;
   width: 50%;
-  margin-top: 6px;
-  padding: 20px;
+  margin-top: 4rem;
+  padding: 2rem;
 }
 
 /* Clear floats after the columns */
@@ -423,7 +425,7 @@ input[type="submit"]:hover {
 }
 
 /* Responsive layout -"Ipad"when the screen is less than 768px wide. */
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 770px) {
   body {
     height: 100%;
     display: flex;
@@ -471,6 +473,8 @@ input[type="submit"]:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     padding-top: 2rem;
     padding-bottom: 0.5rem;
     position: relative;
@@ -497,8 +501,8 @@ input[type="submit"]:hover {
   .dropdown-content {
     display: none;
     position: relative;
-    min-width: 4rem;
-    border-radius: 1rem;
+    min-width: 9rem;
+    border-radius: 0.25rem;
     background-color: rgb(68, 215, 241);
     color: black;
     border-radius: 1rem;
@@ -506,18 +510,21 @@ input[type="submit"]:hover {
 
   .dropdown-content a {
     color: black;
-    padding: 0;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 0.29rem;
+    padding-bottom: 0.5rem;
     text-decoration: none;
     display: block;
   }
 
-  .dropdown-content a:hover {
+  .dropdown-content a:focus-within {
     background-color: rgb(68, 215, 241);
     color: rgb(250, 7, 7);
     border-radius: 1rem;
   }
 
-  .dropdown:hover .dropdown-content {
+  .dropdown:focus-within .dropdown-content {
     margin: 1rem 3rem;
     padding: 0 0.25rem;
     display: block;
@@ -526,7 +533,7 @@ input[type="submit"]:hover {
     text-align: center;
   }
 
-  .dropdown:hover .dropbtn {
+  .dropdown:focus-within .dropbtn {
     background-color: rgb(236, 20, 66);
     color: black;
     transition: 50s;
@@ -540,7 +547,7 @@ input[type="submit"]:hover {
     margin-top: 0.2rem;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: black;
     /*We want these buttons to have a decent touch area so they are easy to click/tap*/
     display: inline-flex;
@@ -550,7 +557,7 @@ input[type="submit"]:hover {
     border: 5rem;
     background: none;
   }
-  .dropbtn:hover {
+  .dropbtn:focus-within {
     background-color: magenta;
   }
   /* home button*/
@@ -569,10 +576,106 @@ input[type="submit"]:hover {
     border: 5rem;
     background: none;
   }
-  .homebtn:hover {
+  .homebtn:focus-within {
     color: rgb(250, 7, 7);
     border-radius: 1rem;
   }
+  #marquee-container {
+    height: auto;
+    flex-direction: column;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0.25rem 0.25rem;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: teal;
+    background-image: url("img/candystrip.jpg");
+  }
+  #comingSoonPreview {
+    height: auto;
+    flex-direction: column;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0.25rem 0.25rem;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: teal;
+    background-image: url("img/candystrip.jpg");
+  }
+  /*movie images*/
+  /* Create four equal columns that floats next to each other  */
+  .galary-view {
+    float: left;
+    width: 40%;
+    min-height: 45rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+  .galary-view:focus-within {
+    border: 0.21rem solid #777;
+    background-color: lightblue;
+  }
+  /* Clear floats after the columns  */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*description of movie*/
+  .desc {
+    padding: 0;
+    text-align: left;
+  }
+  #timebtn {
+    color: black;
+    font-size: 0.9rem;
+    background-color: rgb(56, 235, 160);
+    opacity: 0.9;
+    position: fixed;
+    padding: 0.1rem 0.1rem;
+    margin: 1rem 0.25rem;
+    border: none;
+    box-sizing: border-box;
+    border-style: inset;
+    border-width: thin;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    width: 4rem;
+    opacity: 0.8;
+  }
+  #timebtn:focus-within {
+    background-color: rgb(80, 35, 244);
+    color: rgb(187, 240, 241);
+  }
+
+  /* Top of page Button  */
+  .topofpagebtn {
+    color: black;
+    font-size: 0.9rem;
+    background-color: rgb(206, 105, 105);
+    opacity: 0.9;
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.25rem;
+    padding: 0.25rem 0.25rem;
+    margin: 0.25rem 0.25rem;
+    border: none;
+    box-sizing: border-box;
+    border-style: inset;
+    border-width: thin;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    width: 4rem;
+  }
+  .topofpagebtn:focus-within {
+    background-color: lightblue;
+    color: black;
+  }
+
   footer {
     height: 4rem;
 
@@ -674,13 +777,13 @@ input[type="submit"]:hover {
     display: block;
   }
 
-  .dropdown-content a:hover {
+  .dropdown-content a:focus-within {
     background-color: rgb(68, 215, 241);
     color: rgb(250, 7, 7);
     border-radius: 1rem;
   }
 
-  .dropdown:hover .dropdown-content {
+  .dropdown:focus-within .dropdown-content {
     margin: 1rem 3rem;
     padding: 0 0.25rem;
     display: block;
@@ -689,7 +792,7 @@ input[type="submit"]:hover {
     text-align: center;
   }
 
-  .dropdown:hover .dropbtn {
+  .dropdown:focus-within.dropbtn {
     background-color: rgb(236, 20, 66);
     color: black;
     transition: 50s;
@@ -713,7 +816,7 @@ input[type="submit"]:hover {
     border: 5rem;
     background: none;
   }
-  .dropbtn:hover {
+  .dropbtn:focus-within {
     background-color: magenta;
   }
   /* home button*/
@@ -732,7 +835,7 @@ input[type="submit"]:hover {
     border: 5rem;
     background: none;
   }
-  .homebtn:hover {
+  .homebtn:focus-within {
     /*background-color: rgb(68, 215, 241);*/
     color: rgb(250, 7, 7);
     border-radius: 1rem;
@@ -770,7 +873,7 @@ input[type="submit"]:hover {
     width: 80%;
     padding-left: 2rem;
   }
-  .galary-view:hover {
+  .galary-view:focus-within {
     border: 0.21rem solid #777;
     background-color: lightblue;
   }
@@ -814,7 +917,7 @@ input[type="submit"]:hover {
     border: 1rem;
     background: none;
   }
-  .footbtn:hover {
+  .footbtn:focus-within {
     /*background-color: rgb(68, 215, 241);*/
     color: rgb(250, 7, 7);
     border-radius: 1rem;
@@ -822,9 +925,9 @@ input[type="submit"]:hover {
   /* Top of page Button  */
   .topofpagebtn {
     color: black;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     background-color: rgb(206, 105, 105);
-    opacity: 0.6;
+    opacity: 0.8;
     position: fixed;
     bottom: 1.5rem;
     right: 0.5rem;
@@ -835,10 +938,35 @@ input[type="submit"]:hover {
     border-width: thin;
     border-radius: 1.5rem;
     cursor: pointer;
-    width: 7rem;
+    width: 4rem;
   }
-  .topofpagebtn:hover {
+  .topofpagebtn:focus-within {
     background-color: lightblue;
     color: black;
+  }
+  /* Style the container/contact section */
+  .container {
+    border-radius: 4rem;
+    background-color: rgba(223, 242, 244, 0.4);
+    padding-left: 0.1rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    margin: 1rem 1rem;
+  }
+
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 60%;
+    margin-top: 4rem;
+    padding: 2rem;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
