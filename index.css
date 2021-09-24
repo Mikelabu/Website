@@ -137,6 +137,7 @@ marquee {
   border-radius: 1.5rem;
   cursor: pointer;
   width: 7rem;
+  opacity: 0.8;
 }
 #timebtn:hover {
   background-color: rgb(80, 35, 244);
@@ -568,7 +569,6 @@ input[type="submit"]:hover {
     display: grid;
     height: 5rem;
     position: inherit;
-
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;

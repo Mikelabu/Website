@@ -13,7 +13,7 @@
        max = elem.scrollWidth;
        // Clone the children of the container until the
        // scrollWidth is at least twice as large as max.
-       while (elem.scrollWidth < max * 2) {
+       while (elem.scrollWidth < max * 3) {
        let length = elem.children.length;
         for (var i = 0; i < length; ++i) {
          elem.appendChild(elem.children[i].cloneNode(true));
