@@ -423,7 +423,7 @@ input[type="submit"]:hover {
 }
 
 /* Responsive layout -"Ipad"when the screen is less than 768px wide. */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 790px) {
   body {
     height: 100%;
     display: flex;
