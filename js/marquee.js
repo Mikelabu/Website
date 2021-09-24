@@ -1,6 +1,4 @@
-
-// ]
-
+"use strict";
 
 (function(window, document, undefined) {
     let spaceinterval = 1;

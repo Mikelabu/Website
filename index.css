@@ -221,6 +221,10 @@ marquee {
   border: 1px solid #777;
   background-color: lightblue;
 }
+.row {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
 /* Clear floats after the columns  */
 .row:after {
   content: "";
@@ -364,6 +368,7 @@ input[type="submit"]:hover {
 /* Style the container/contact section */
 .container {
   border-radius: 4rem;
+  background-image: url("react.js");
   background-color: #dfefff;
   padding-left: 10rem;
   padding-top: 2rem;
@@ -558,12 +563,7 @@ input[type="submit"]:hover {
     left: auto;
     padding-bottom: 0.5rem;
   }
-  /* header a.logo {
-    width: 100%;
-    height: 1rem;
-    left: 4rem;
-    top: 10rem;
-  } */
+
   .nav {
     display: grid;
     height: 5rem;
@@ -701,12 +701,29 @@ input[type="submit"]:hover {
     background-color: teal;
     background-image: url("img/candystrip.jpg");
   }
-  /* footer {
-    height: 10rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-items: inline;
-  } */
+  /*movie images*/
+  /* Create four equal columns that floats next to each other  */
+  .galary-view {
+    float: left;
+    width: 80%;
+    padding-left: 2rem;
+  }
+  .galary-view:hover {
+    border: 0.21rem solid #777;
+    background-color: lightblue;
+  }
+  /* Clear floats after the columns  */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*description of movie*/
+  .desc {
+    padding: 0;
+    text-align: left;
+  }
+
   footer {
     height: 6rem;
     display: grid;

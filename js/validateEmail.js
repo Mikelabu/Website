@@ -1,3 +1,5 @@
+"use strict";
+
 function ValidateEmail() {
 
     const emailAddress = document.querySelector('#emailAddress');
