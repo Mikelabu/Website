@@ -465,17 +465,21 @@ input[type="submit"]:hover {
   }
 
   .nav {
-    height: 4rem;
-    /* flex-wrap: grid; */
-    align-items: flex-start;
-    justify-content: stretch;
-    padding-top: 3rem;
-    padding-bottom: 0rem;
+    display: grid;
+    height: 5rem;
+    position: sticky;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
     position: relative;
-
+    margin: 0 0 0 0;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
   }
+
   .dropbtn {
     padding: 0 2rem;
     margin: 0 0.625rem;
