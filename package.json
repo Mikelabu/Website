@@ -21,5 +21,7 @@
     "path": "^0.12.7",
     "read-excel-file": "^5.2.8"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jest": "^27.3.0"
+  }
 }
